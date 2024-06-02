@@ -7,12 +7,14 @@ html {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background-color: #FCE2C7;
+  background-color: #D3D0CB;
+  --buttons: #6E8898;
+  --header: #2E5266;
+  --footer: #9FB1BC;
 }
 
 header {
-  background: rgb(243,236,15);
-  background: linear-gradient(0deg, rgba(243,236,15,1) 0%, rgba(230,218,9,1) 31%, rgba(255,241,55,1) 47%, rgba(250,233,31,1) 75%, rgba(245,226,9,1) 100%);
+  background: var(--header);
   padding: 10px;
   text-align: center;
 }
@@ -20,13 +22,13 @@ header {
 .logo {
   border-radius: 100px;
   height: 40px;
-  width: 40px;
+  width: 90px;
 }
 
 button {
   border: none;
   padding: 10px;
-  background-color: #D59C38;
+  background-color: var(--buttons);
   margin: 5px;
   border-radius: 10px;
   color: white;
@@ -45,7 +47,7 @@ nav {
 
 #lstan {
   width: 300px;
-  height: 260px;
+  height: 120px;
 }
 
 article {
@@ -54,18 +56,14 @@ article {
 }
 
 footer {
-  background-color: #E79E51;
+  background-color: var(--footer);
   padding: 10px;
-  height: 110px;
+  height: 80px;
 }
 
 #logofooter {
-  height: 80px;
+  height: 40px;
   width: 80px;
-}
-
-.footerabsolute {
-  position: absolute;
 }
 
 a {
